@@ -22,11 +22,26 @@ namespace CSharpDesignPatterns.Base
         {
             ColorType = color;
         } // end method paint
+        
+        public void CleanFrame()
+        {
+            Console.WriteLine("Cleaning Frame...");
+        } // end clean frame
+
+        public virtual void AirTires()
+        {
+            Console.WriteLine("Airing up tires...");
+        } // end air tires
+
+        public virtual void TestRide()
+        {
+            Console.WriteLine("Taking the bike for a test ride...");
+        } // end test ride
 
         public override string ToString()
         {
             return this.GetType().Name + " Bicycle color is " + ColorType + 
                 " and costs $" + Price;
-        }
-    } // end clas
+        } // end string
+    } // end class
 } // end namespace
